@@ -9,10 +9,11 @@ const CreatePage = () => {
     image:"",
   });
 
-  const toast = useToast()
+  const toast = useToast();
+
   const {createProduct} = useProductStore();
 
-const handleAddProduct = async() =>{
+const handleAddProduct = async () =>{
   const { success,message } = await createProduct(newProduct);
 
   if(!success){
@@ -36,7 +37,7 @@ const handleAddProduct = async() =>{
 };
 
   return (
-   <Container maxw={"container.sm"} >
+   <Container maxW={"container.sm"} >
     <VStack  
     spacing={8}>
       <Heading as={"h1"} size={"2xl"} textAlign={"center"} mb={8} >
