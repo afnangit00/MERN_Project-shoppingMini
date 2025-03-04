@@ -36,6 +36,7 @@ const NavBar = () => {
         </Button>
          </HStack>
     </Flex>
+    <h6>credited by afnan azhari</h6>
   </Container>
   );
 };
