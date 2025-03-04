@@ -30,10 +30,11 @@ const NavBar = () => {
           <PlusSquareIcon fontSize={20} />
         </Button>
         </Link>
-      </HStack>
+     
       <Button onClick={toggleColorMode}>
         {colorMode === "light" ? <IoMoon/> : <LuSun size='20' /> }
         </Button>
+         </HStack>
     </Flex>
   </Container>
   );
